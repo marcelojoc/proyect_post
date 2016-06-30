@@ -5,6 +5,8 @@
     <title>pruebaTPL</title>
   </head>
   <body>
+
+    <h1><?php echo $name ?></h1>
           <ul class="generic-list">
             <li class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, impedit.</li>
             <li class="item">Fuga in pariatur vitae praesentium molestias earum tempore, laboriosam quibusdam.</li>

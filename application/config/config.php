@@ -64,7 +64,7 @@ $config['uri_protocol']	= 'REQUEST_URI';
 |
 | https://codeigniter.com/user_guide/general/urls.html
 */
-$config['url_suffix'] = 'jsp';
+$config['url_suffix'] = '';
 
 /*
 |--------------------------------------------------------------------------

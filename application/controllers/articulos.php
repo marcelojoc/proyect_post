@@ -7,17 +7,20 @@ class Articulos extends CI_Controller{
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
+   $this->load->model(array('Persona_model'));
   }
 
   function index()
   {
-    $this->load->view('mapa.tpl.php');
+    //$this->load->model('Persona_model');
+    $quien['name']=$this->Persona_model->get_nombre();
+    $this->load->view('mapa.tpl.php', $quien);
     $this->load->view('page/_menu');
   }
 
-  function comentario($nombre)
+  function comentario()
   {
-
+    $nombre= $this->Persona_model->get_nombre();
     // echo "esto es un comentario ...no una prueba <br>";
     //
     // echo "tu eres:".$nombre." y tienes :" .$edad. "Años";
