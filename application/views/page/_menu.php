@@ -6,3 +6,5 @@
     <li>Menu de numero 5</li>
     <li>Menu de numero 6</li>
 </ul>
+
+<?php echo ($this->calendar->generate(2016)); ?>

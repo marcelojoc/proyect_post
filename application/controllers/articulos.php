@@ -8,6 +8,13 @@ class Articulos extends CI_Controller{
     parent::__construct();
     //Codeigniter : Write Less Do More
    $this->load->model(array('Persona_model'));
+    $this->output->enable_profiler(TRUE); 
+
+    $this->load->library('calendar');
+
+    $this->load->database();
+     
+   
   }
 
   function index()
@@ -15,6 +22,7 @@ class Articulos extends CI_Controller{
     //$this->load->model('Persona_model');
     $quien['name']=$this->Persona_model->get_nombre();
     $this->load->view('mapa.tpl.php', $quien);
+
     $this->load->view('page/_menu');
   }
 
@@ -30,5 +38,15 @@ class Articulos extends CI_Controller{
     $this->load->view('view_prueba', $dato);
     $this->load->view('page/_menu');
   }
+
+  function lista()
+  {
+
+    $resul['datos'] = $this->Persona_model->get_datos();
+    $this->load->view('page/_lista_viaje', $resul);
+
+    
+  }
+
 
 }
