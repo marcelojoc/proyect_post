@@ -23,6 +23,8 @@ class Articulos extends CI_Controller{
     $this->load->view('mapa.tpl.php', $quien);
 
     $this->load->view('page/_menu');
+
+
   }
 
   function comentario()
@@ -38,12 +40,16 @@ class Articulos extends CI_Controller{
     $this->load->view('page/_menu');
   }
 
-  function lista()
+  function lista($valor = NULL)
   {
     
     $resul['datos'] = $this->Persona_model->get_datos();
     $this->load->view('page/_lista_viaje', $resul);
+    if (isset($valor))
+    {
 
+      
+    }
     
   }
 
