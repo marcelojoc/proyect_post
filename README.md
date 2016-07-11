@@ -1,5 +1,7 @@
-Grocery CRUD
+Sistema de post _Prueba
 =============
-Grocery CRUD is a PHP and Codeigniter Framework library that creates a full functional CRUD system without the need to customise JavaScript or CSS.
+Utilizando Grocery Crud + CodeIgniter 3
+
+Sistema de post y registro de incidencias
 
 For more information, visit http://www.grocerycrud.com
