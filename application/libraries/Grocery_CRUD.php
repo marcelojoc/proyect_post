@@ -3065,6 +3065,7 @@ class grocery_CRUD_States extends grocery_CRUD_Layout
             case self::STATE_INSERT:
                 if(!empty($_POST))
                 {
+					
                     $state_info = (object)array('unwrapped_data' => $_POST);
                 }
                 else
